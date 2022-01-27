@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA HOTELS</title>
+    <style>
+
+
+
+
+        .wrap { width: 100%;}
+        .header {
+            width: auto;
+            height: 10%;
+            padding: 1px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            background-image: url('room.jfif');
+        }
+        .middle { height: 80%;}
+        .sidebar {
+            background-image: url('room2.jfif');
+        }
+        .sidebar ul {
+            list-style-type: none;
+        }
+	.main{
+	    display: grid;
+		grid-template-columns: 3fr 1fr;	}
+        .content {
+            height: 100%px;
+            font-size: 24px;
+            background-image: url('room3.jfif');
+        }
+        section {
+            line-height: 30px;
+            font-family: sans-serif;
+            padding: 0px 40px;
+        }
+        body{
+            color: rgb(248, 244, 244);
+            font-size: 15px;
+            font-family: sans-serif;
+            background-image: url('room4.jfif');
+        }
+        .unordered{
+            width: auto;
+            height: 10%;
+            padding-right: 10px;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            }
+            .first{
+                width: auto;
+            height: 10%;
+            padding-right: 10px;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            }
+        .footer {
+            height: cover; 
+            text-align: center;
+            color: rgb(161, 159, 159);
+            font-size: 40px;                                                                                                                                                                                                                                                        ;
+            background-image: url('room5.jfif');
+            clear: both;
+
+	.container {
+	width: 50px;
+        height: 150px;
+        background: #f0e68c;
+        }
+    </style>
+</head>
+<body>
+<body style="background: rgb(11, 31, 31);">
+    <div class="wrap">
+        <div class="header">
+            <h2>SA HOTELS</h2>
+        </div>
+        <div class="main" style="">
+<div class="content">
+            <section class="body">
+            </br>
+<p> Our first hotel was established since 1957, and we've made sure to offer the best of services to our customers</p>
+<p> Currently we have about 357 branches worldwide, so we've got you covered in any part of the world</p>
+<p> Our aim is to offer the best services known to humanity and make every trip or escape worthwhile
+</p>
+<p>The Best Work Is Done Together
+We are your connection point. With a variety of venues and flexible meetings spaces in a multitude of destinations, we’ll help you make the most of your time together.</p>
+<p>DISCOVER YOUR WORLD
+SA Hotels™ gives you access to world-class benefits, free nights, exclusive experiences and so much more.</p>            
+
+ Please select your country of destination
+            
+            <select id="shuttles" name="shuttle" style="size: 100%;">
+                <option value="Nigeria">Nigeria</option>
+                <option value="Colombia">Colombia</option>
+		<option value="Jamaica">Jamaica</option>
+            </select>   
+</br>
+<label for="doa">Date of arrival</label>
+                <input type="date" name="date" id="date" style="size: 100px;">
+</br>
+<label for="dod">Date of departure</label>
+                <input type="date" name="date" id="date">
+</section>
+            </div>
+        
+	<div style="background-image: url('building.jfif');">
+
+<div style="background-image: url('login.jfif');", "background-size: cover;">
+		<form action="action.php" style="text-align:center" id="form"  onsubmit="return func()">
+ </br>
+        <h1 > Log in </h1>
+        <ul>
+
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" name="email" id="email" placeholder="e.g market@gmail.com">
+                        </br>
+                <label for="pword">
+                    Password
+                </label>
+                <input type="text" id="pword" placeholder="Password">
+        </ul>
+        <label for="shuttles">
+            Don't have an account?
+        </label>
+        <a href="signup.html">Sign up</a>
+                </label></br></br>
+            </form>
+	
+	</div>
+    	
+
+	</div>
+            <script>
+                function func(){
+                    if(validateForm()){
+                        alert("You have registered successfully");
+                        return false;
+                    }
+                }
+
+                function validateForm(){
+                    let email = document.forms["form"]["email"].value;
+
+                    for(let el of document.forms["form"]){
+                        if(el.value == ""){
+                            alert("Please fill out all fields");
+                            return false;
+                        }
+                    }
+
+                    if(email.indexOf("gmail") != -1 || email.indexOf("yahoo") != -1 || email.indexOf("icloud") != -1){
+                    }else{
+                        alert("Please use only gmail, yahoo or icloud");
+                        return false;
+                    }
+
+                    if(!document.forms["form"].terms.checked){
+                        alert("You must agree with our terms and conditions");
+                        
+                        return false;
+                    }
+
+                    return true;
+
+                }
+            </script>
+</body>
+	</div>
+
+		
+</div>
+            
+        <div class="footer" style="background-image: url('login.jfif');", "background-size: 100%;">
+<form action="#" class="contact-form" id="form">
+<style>
+    .media img{
+        width: 30px;
+        height: 30px;
+    }
+ul{
+		list-style-type: none;
+	}
+    </style>
+        <h2><b><u><em>Contact us</em></u></b></h2>
+        <ul>
+            <ul class="media">
+                <li><a href="#"><img src="instagram.png" alt="IG HANDLE"></a>SA.hotels_ig</li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter"></a>SA.hotels_tw</li>
+                <li><a href="#"><img src="whatsapp.png" alt="Phone no."></a>+234805353535536</li>
+                <li><a href="#"><img src="email.png" alt="Email."></a>SA.hotels@gmail.com.ng</li>
+                <li><a href="#"><img src="telephone.png" alt="Email."></a>+234805353535536</li>
+              </ul>
+    </form>
+</div>
+
+    </div>
+</body>
+</html>
